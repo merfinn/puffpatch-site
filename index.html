@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PuffPatch</title>
+<meta name="description" content="PuffPatch turns your room into a little garden and an underwater reef on Apple Vision Pro. Look, pinch and pick. A calm, family-friendly game to play together.">
+<meta property="og:title" content="PuffPatch for Apple Vision Pro">
+<meta property="og:description" content="Look. Pinch. Pick! Twelve calm worlds on two islands, right in your room.">
+<meta property="og:image" content="https://merfinn.github.io/puffpatch-site/images/header.jpg">
+<link rel="icon" href="images/icon.png">
+<link rel="apple-touch-icon" href="images/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#f6f1ff; --panel:#ffffff; --line:#e4d8fb; --fg:#2e1f55; --dim:#6b5d8f; --pink:#ff5f9e; --green:#4caf50; --blue:#2f8fd8; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#1b1530; --panel:#261e42; --line:#3a2f5e; --fg:#f3edff; --dim:#c2b6e3; } }
+  :root[data-theme="dark"] { --bg:#1b1530; --panel:#261e42; --line:#3a2f5e; --fg:#f3edff; --dim:#c2b6e3; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:600 18px/1.55 Nunito,ui-rounded,system-ui,sans-serif; }
+  img, video { max-width:100%; display:block; }
+  .hero img { width:100%; aspect-ratio:3840/1646; object-fit:cover; }
+  main { max-width:1120px; margin:auto; padding:32px 16px 56px; display:grid; gap:48px; }
+  h1 { font:900 clamp(34px,6vw,56px)/1.1 Nunito,sans-serif; margin:0 0 10px; color:var(--pink); text-wrap:balance; }
+  h2 { font:900 30px/1.2 Nunito,sans-serif; margin:0 0 14px; text-wrap:balance; }
+  p { margin:0; max-width:66ch; }
+  .lead { color:var(--dim); font-size:21px; }
+  .cta { display:inline-block; margin:20px 12px 0 0; padding:14px 24px; border-radius:16px; background:var(--pink); color:#fff; font-weight:900; text-decoration:none; }
+  .cta.alt { background:var(--panel); color:var(--pink); border:2px solid var(--pink); }
+  .new { display:inline-flex; gap:8px; align-items:center; margin-bottom:14px; padding:6px 14px; border-radius:999px; background:var(--panel); border:1px solid var(--line); color:var(--dim); font-size:15px; text-decoration:none; }
+  .new b { background:var(--pink); color:#fff; border-radius:999px; padding:1px 9px; font-size:13px; }
+  .video { border-radius:20px; overflow:hidden; border:1px solid var(--line); background:#000; }
+  .video video { width:100%; aspect-ratio:16/9; }
+  .shots { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; }
+  .shots img { border-radius:16px; border:1px solid var(--line); }
+  .islands { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:16px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:22px; min-width:0; }
+  .card h3 { margin:0 0 8px; font:900 22px Nunito,sans-serif; }
+  .card p, .card li { color:var(--dim); font-size:16px; }
+  .card ul { margin:8px 0 0; padding-left:20px; }
+  .card img.island { width:160px; margin:-6px auto 6px; }
+  .green h3 { color:var(--green); } .blue h3 { color:var(--blue); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+  footer { border-top:1px solid var(--line); padding-top:18px; color:var(--dim); font-size:15px; display:flex; flex-wrap:wrap; gap:8px 20px; }
+  a { color:var(--pink); }
+</style>
+</head>
+<body>
+<div class="hero"><img src="images/header.jpg" alt="PuffPatch: a garden island with an apple tree and a bunny, and an ocean island with an octopus"></div>
+<main>
+  <section>
+    <a class="new" href="#new"><b>NEW</b> Version 3.0.1: smoother play, a sound effects switch</a>
+    <h1>Look. Pinch. Pick!</h1>
+    <p class="lead">PuffPatch turns your room into a little garden and an underwater reef on Apple Vision Pro. Look at an apple, a tulip or a jellyfish, pinch, and it's yours. A calm, family-friendly game to play together.</p>
+    <a class="cta" href="https://apps.apple.com/app/id6770136231">Get PuffPatch</a>
+    <a class="cta alt" href="https://apps.apple.com/app/id6787667464">Try PuffPatch Lite free</a>
+  </section>
+
+  <section aria-label="Video">
+    <div class="video"><video src="images/preview.mp4" poster="images/shot1.jpg" controls muted playsinline preload="none"></video></div>
+  </section>
+
+  <section id="new" class="card">
+    <h2>New in 3.0.1</h2>
+    <ul>
+      <li>Taking off Apple Vision Pro pauses your round, so the timer no longer runs out while you're away.</li>
+      <li>Leaving the Ocean Island in the middle of a round brings you safely back to the menu.</li>
+      <li>A new Sound effects switch: turn the music off and still hear every pop and chime.</li>
+      <li>PuffPatch Lite: the Daily Pick always picks one of your two levels.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Two islands, twelve worlds</h2>
+    <div class="islands">
+      <div class="card green"><img class="island" src="images/island-green.png" alt=""><h3>Garden Island</h3><p>An apple tree, a blackberry bush, a coconut grove, a tulip field, a Christmas tree that plays Jingle Bells as you pick, and a secret bunny meadow.</p></div>
+      <div class="card blue"><img class="island" src="images/island-blue.png" alt=""><h3>Ocean Island</h3><p>A clownfish reef, a jellyfish bloom, a kelp forest full of sea stars, a sparkling bubble reef, a mermaid lagoon and an octopus hideaway.</p></div>
+    </div>
+  </section>
+
+  <section aria-label="Screenshots">
+    <div class="shots">
+      <img src="images/shot1.jpg" alt="An apple tree in a living room" loading="lazy">
+      <img src="images/shot2.jpg" alt="Garden Island level select" loading="lazy">
+      <img src="images/shot3.jpg" alt="A Christmas tree with ornaments in the room" loading="lazy">
+      <img src="images/shot4.jpg" alt="An underwater reef with jellyfish and a turtle" loading="lazy">
+      <img src="images/shot5.jpg" alt="Ocean Island level select" loading="lazy">
+      <img src="images/shot6.jpg" alt="Level complete with three stars and a crown" loading="lazy">
+    </div>
+  </section>
+
+  <section>
+    <h2>Play your way</h2>
+    <div class="grid">
+      <div class="card"><h3>Stars and crowns</h3><p>Two-minute rounds. Pick 20, 30 and 40 for stars, everything for the crown.</p></div>
+      <div class="card"><h3>Calm mode</h3><p>No timer at all. Pick slowly and stop whenever you like.</p></div>
+      <div class="card"><h3>Daily Pick</h3><p>A new level every day, with a streak to keep.</p></div>
+      <div class="card"><h3>Bonus levels</h3><p>Earn every crown to meet the bunny and the octopus.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>For grown-ups</h2>
+    <p>No ads, no accounts, no tracking and no data collection. It works offline. PuffPatch includes everything with no in-app purchases. PuffPatch Lite is free and has two complete levels: Tulip Field and Christmas Tree.</p>
+  </section>
+
+  <footer>
+    <span>PuffPatch and PuffPatch Lite for Apple Vision Pro</span>
+    <a href="https://gist.github.com/merfinn/94f305692d7ab0d7163d8d4ca2807071">Privacy</a>
+    <a href="https://gist.github.com/merfinn/25909777e3ac38122ab004521c5d27e7">Support</a>
+  </footer>
+</main>
+</body>
+</html>

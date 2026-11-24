@@ -42,6 +42,15 @@
   .card img.island { width:160px; margin:-6px auto 6px; }
   .green h3 { color:var(--green); } .blue h3 { color:var(--blue); }
   .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+  .pf-head { display:flex; gap:18px; align-items:center; margin-bottom:18px; }
+  .pf-head img { border-radius:22px; flex:none; }
+  .pf-islands { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin:0 0 14px; }
+  .pf-islands figure { margin:0; text-align:center; }
+  .pf-islands img { width:100%; max-width:220px; margin:auto; }
+  .pf-islands figcaption { color:var(--dim); font-size:15px; }
+  .pf-islands figcaption b { display:block; color:var(--fg); font-size:18px; }
+  .pf-store { margin-top:14px; font-weight:900; color:var(--pink); }
+  @media (max-width:520px) { .pf-head { flex-direction:column; align-items:flex-start; } }
   footer { border-top:1px solid var(--line); padding-top:18px; color:var(--dim); font-size:15px; display:flex; flex-wrap:wrap; gap:8px 20px; }
   a { color:var(--pink); }
 </style>
@@ -50,7 +59,7 @@
 <div class="hero"><img src="images/header.jpg" alt="PuffPatch: a garden island with an apple tree and a bunny, and an ocean island with an octopus"></div>
 <main>
   <section>
-    <a class="new" href="#new"><b>NEW</b> Version 3.0.1: smoother play, a sound effects switch</a>
+    <a class="new" href="#picnic-friends"><b>NEW</b> Puff Patch: Picnic Friends, now on iPhone and iPad</a>
     <h1>Look. Pinch. Pick!</h1>
     <p class="lead">PuffPatch turns your room into a little garden and an underwater reef on Apple Vision Pro. Look at an apple, a tulip or a jellyfish, pinch, and it's yours. A calm, family-friendly game to play together.</p>
     <a class="cta" href="https://apps.apple.com/app/id6770136231">Get PuffPatch</a>
@@ -59,6 +68,22 @@
 
   <section aria-label="Video">
     <div class="video"><video src="images/preview.mp4" poster="images/shot1.jpg" controls muted playsinline preload="none"></video></div>
+  </section>
+
+  <section id="picnic-friends" class="card pf">
+    <div class="pf-head"><img src="images/pf-icon.png" alt="" width="96" height="96"><div><h2>Puff Patch: Picnic Friends</h2><p class="lead">For iPhone and iPad. Hamham the hamster is having a picnic, and her plush friends are coming! Find the treats they wish for, give them to your friends and watch them smile.</p></div></div>
+    <div class="pf-islands">
+      <figure><img src="images/pf-apple.png" alt="Apple Tree island" loading="lazy"><figcaption><b>Apple Tree</b> Pick apples, blackberries and tulips and share a picnic feast.</figcaption></figure>
+      <figure><img src="images/pf-reef.png" alt="Bubble Reef island" loading="lazy"><figcaption><b>Bubble Reef</b> Find pearls, starfish, shells and gold coins for a sparkly jewel show.</figcaption></figure>
+      <figure><img src="images/pf-soup.png" alt="Dream Soup island" loading="lazy"><figcaption><b>Dream Soup</b> Pour dew drops, moon puffs and star sugar into the pot and stir.</figcaption></figure>
+      <figure><img src="images/pf-soon.png" alt="A new island, wrapped like a present" loading="lazy"><figcaption><b>Coming soon</b> A new island is on its way.</figcaption></figure>
+    </div>
+    <ul>
+      <li>Make every friend happy to open the next island; finish Bubble Reef for a little piano.</li>
+      <li>Big picture buttons and Hamham's voice: no reading needed. No timers and no losing.</li>
+      <li>No ads, no accounts, no tracking, no data collection, no in-app purchases. Works offline.</li>
+    </ul>
+    <p class="pf-store">Coming to the App Store soon.</p>
   </section>
 
   <section id="new" class="card">
@@ -109,6 +134,9 @@
     <span>PuffPatch and PuffPatch Lite for Apple Vision Pro</span>
     <a href="https://gist.github.com/merfinn/94f305692d7ab0d7163d8d4ca2807071">Privacy</a>
     <a href="https://gist.github.com/merfinn/25909777e3ac38122ab004521c5d27e7">Support</a>
+    <span>Puff Patch: Picnic Friends for iPhone and iPad</span>
+    <a href="https://gist.github.com/merfinn/c103234d2b211b745f95f38b25628988">Privacy</a>
+    <a href="https://gist.github.com/merfinn/7e5a46c611b2724abe4294f0add3c4c5">Support</a>
   </footer>
 </main>
 </body>

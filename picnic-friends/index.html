@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puff Patch: Picnic Friends</title>
+<meta name="description" content="A cozy 3D game for little hands on iPhone and iPad. Hamham the hamster and her plush friends are having a picnic: find the treats they wish for on three islands.">
+<meta property="og:title" content="Puff Patch: Picnic Friends — for iPhone and iPad">
+<meta property="og:description" content="Pick apples, dive for pearls and stir a dreamy soup for Hamham's plush friends. No ads, no tracking, no in-app purchases.">
+<meta property="og:image" content="https://merfinn.github.io/puffpatch-site/picnic-friends/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#fff6fa; --panel:#ffffff; --line:#f3d9e6; --fg:#4a2338; --dim:#87607a; --pink:#ec4f92; --purple:#8f63d8; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#1e1419; --panel:#2a1c24; --line:#47303d; --fg:#fbeaf3; --dim:#cfa9bf; --pink:#ff7db5; --purple:#b996ff; } }
+  :root[data-theme="dark"] { --bg:#1e1419; --panel:#2a1c24; --line:#47303d; --fg:#fbeaf3; --dim:#cfa9bf; --pink:#ff7db5; --purple:#b996ff; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:600 18px/1.55 Nunito,ui-rounded,system-ui,sans-serif; }
+  img, video { max-width:100%; display:block; }
+  .hero img { width:100%; aspect-ratio:3840/1646; object-fit:cover; }
+  main { max-width:1120px; margin:auto; padding:28px 16px 56px; display:grid; gap:44px; }
+  .intro { display:flex; gap:22px; align-items:center; }
+  .intro img { width:112px; height:112px; border-radius:26px; flex:none; box-shadow:0 8px 24px rgba(236,79,146,.25); }
+  h1 { font:900 clamp(32px,5.5vw,52px)/1.1 Nunito,sans-serif; margin:0 0 8px; color:var(--pink); text-wrap:balance; }
+  h2 { font:900 28px/1.2 Nunito,sans-serif; margin:0 0 14px; text-wrap:balance; }
+  p { margin:0; max-width:66ch; }
+  .lead { color:var(--dim); font-size:20px; }
+  .cta { display:inline-block; margin-top:18px; padding:14px 24px; border-radius:16px; background:var(--pink); color:#fff; font-weight:900; text-decoration:none; }
+  .soon { display:inline-block; margin-top:18px; padding:12px 20px; border-radius:16px; border:2px dashed var(--pink); color:var(--pink); font-weight:900; }
+  .video { border-radius:20px; overflow:hidden; border:1px solid var(--line); background:#000; }
+  .video video { width:100%; aspect-ratio:1920/886; }
+  .islands { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:18px; min-width:0; }
+  .card img { width:100%; max-width:200px; margin:-4px auto 8px; }
+  .card h3 { margin:0 0 6px; font:900 21px Nunito,sans-serif; color:var(--purple); }
+  .card p { color:var(--dim); font-size:16px; }
+  .shots { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:14px; }
+  .shots img { border-radius:16px; border:1px solid var(--line); }
+  ul { margin:0; padding-left:22px; } li { margin:6px 0; color:var(--dim); }
+  footer { border-top:1px solid var(--line); padding-top:18px; color:var(--dim); font-size:15px; display:flex; flex-wrap:wrap; gap:8px 20px; }
+  a { color:var(--pink); }
+  @media (max-width:560px) { .intro { flex-direction:column; align-items:flex-start; } }
+</style>
+</head>
+<body>
+<div class="hero"><img src="img/header.jpg" alt="Puff Patch: three floating islands and Hamham the hamster on a sunny meadow"></div>
+<main>
+  <section class="intro">
+    <img src="img/icon.png" alt="">
+    <div>
+      <h1>Puff Patch: Picnic Friends</h1>
+      <p class="lead">For iPhone and iPad. Hamham the hamster is having a picnic, and her plush friends are coming! Each friend shows a little picture of their wish. Find the treats, give them to your friend and watch them smile.</p>
+      <span class="soon" id="store">Coming to the App Store soon</span>
+    </div>
+  </section>
+
+  <section aria-label="Video">
+    <div class="video"><video src="img/preview.mp4" poster="img/poster.jpg" controls muted playsinline preload="none"></video></div>
+  </section>
+
+  <section>
+    <h2>Three islands to explore</h2>
+    <div class="islands">
+      <div class="card"><img src="../images/pf-apple.png" alt=""><h3>Apple Tree</h3><p>Pick apples, blackberries and tulips, shake the tree and set the picnic blanket. When everyone has their treat, the whole picnic shares a feast.</p></div>
+      <div class="card"><img src="../images/pf-reef.png" alt=""><h3>Bubble Reef</h3><p>Dive for pearls, starfish, shells and gold coins. Your friends turn them into sparkly jewels for a show on the shell stage.</p></div>
+      <div class="card"><img src="../images/pf-soup.png" alt=""><h3>Dream Soup</h3><p>In an evening meadow, pour dew drops, moon puffs and star sugar into the pot, stir and serve a dreamy soup.</p></div>
+      <div class="card"><img src="../images/pf-soon.png" alt=""><h3>Coming soon</h3><p>A new island is on its way. Make every friend happy to open the next island, and finish Bubble Reef for a little piano.</p></div>
+    </div>
+  </section>
+
+  <section aria-label="Screenshots">
+    <div class="shots">
+      <img src="img/shot1.jpg" alt="Three islands of picnic fun" loading="lazy">
+      <img src="img/shot2.jpg" alt="Every friend has a wish" loading="lazy">
+      <img src="img/shot3.jpg" alt="Then a picnic feast" loading="lazy">
+      <img src="img/shot5.jpg" alt="Dive for pearls and stars" loading="lazy">
+      <img src="img/shot6.jpg" alt="A sparkly jewel show" loading="lazy">
+      <img src="img/shot7.jpg" alt="Stir a dreamy soup" loading="lazy">
+      <img src="img/shot8.jpg" alt="Play Twinkle Twinkle on the piano" loading="lazy">
+      <img src="img/shot9.jpg" alt="The Friends book with hearts and gifts" loading="lazy">
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Made for little hands</h2>
+    <ul>
+      <li>Big picture buttons, no reading needed. Hamham's friendly voice tells you what to do.</li>
+      <li>No timers and no losing: every round ends in a happy party.</li>
+      <li>The Friends book keeps hearts and gifts from every friend.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>For grown-ups</h2>
+    <p>No ads, no accounts, no tracking and no data collection. No in-app purchases. Works offline. The grown-ups' corner sits behind a press-and-hold gate, with switches for music, sound, voice and haptics.</p>
+  </section>
+
+  <footer>
+    <span>Puff Patch: Picnic Friends for iPhone and iPad</span>
+    <a href="https://gist.github.com/merfinn/c103234d2b211b745f95f38b25628988">Privacy</a>
+    <a href="https://gist.github.com/merfinn/7e5a46c611b2724abe4294f0add3c4c5">Support</a>
+    <a href="../">PuffPatch for Apple Vision Pro</a>
+  </footer>
+</main>
+</body>
+</html>
